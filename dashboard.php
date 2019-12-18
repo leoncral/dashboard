@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)https://getbootstrap.com.br/docs/4.1/examples/dashboard/ -->
-<html lang="en">
+<html lang="pt=br">
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?pagina=vendas">
-                            Cadastro de Vendas
+                            Cadastrar de Vendas
                         </a>
                     </li>
                 </ul>
@@ -76,7 +76,6 @@
                             echo '<h2>Produtos</h2>';
                             break;
                         case 'vendas' :
-                            echo '<h2>Cadastro de Vendas</h2>';
                             include 'cadastroVendas.php';
                             break;
                         default:
