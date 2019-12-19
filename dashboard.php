@@ -42,13 +42,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?pagina=produtos">
-                            Produtos
+                        <a class="nav-link" href="?pagina=clientes">
+                            Cadastro de Clientes
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?pagina=vendas">
-                            Cadastrar de Vendas
+                            Cadastro de Vendas
                         </a>
                     </li>
                 </ul>
@@ -66,14 +66,15 @@
                     </div>
                 </div>
             </div>
+            <!-- Aqui o codigo php que vai trabalhar no carregamento das peáginas de forma dinâmica -->
             <?php
                 if(isset($_GET['pagina'])) {
                     switch($_GET['pagina']) {
                         case 'pedidos' :
                             echo '<h2>Pedidos</h2>';
                             break;
-                        case 'produtos' :
-                            echo '<h2>Produtos</h2>';
+                        case 'clientes' :
+                            include 'cadastroCliente.php';
                             break;
                         case 'vendas' :
                             include 'cadastroVendas.php';

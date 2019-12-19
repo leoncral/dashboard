@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Cadastro de Vendas</title>
+    <title>Cadastro de Clientes</title>
 </head>
 <body>
 
 <div class="container">
     <form action="insert.php" method="post">
         <div class="form-group">
-            <input type="hidden" name="cod" value="1">
-            <h2>Cadastro de Vendas</h2><br>
+            <input type="hidden" name="cod" value="2">
+            <h2>Cadastro de Clientes</h2><br>
             <label>Selecione o mês da venda:</label>
             <label>
                 <select class="form-control" name="mes" style="margin-left: 5px">
@@ -34,19 +34,13 @@
         </div>
         <div class="form-group">
             <label>Digite a Quantidade</label>
-            <input type="number" min="0" name="quantidade" class="form-control">
-        </div><div class="form-group">
-            <label>Digite a Valor</label>
-            <input type="number" min="0" name="valor" class="form-control">
-        </div>
+            <input type="number" min="0" name="quantidade" class="form-control"><br>
         <div style="text-align: right">
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </div>
     </form>
 
 </div>
-
-
 
 
 
